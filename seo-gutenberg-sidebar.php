@@ -35,7 +35,6 @@ function seo_enqueue_assets() {
 add_action( 'enqueue_block_editor_assets', 'seo_enqueue_assets' );
 
 function seo_set_script_translations() {
-
 	wp_set_script_translations(
 		'seo-gutenberg-sidebar',
 		'seo-gutenberg-sidebar',
