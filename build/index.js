@@ -149,9 +149,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 var SEOArchiveToggle = function SEOArchiveToggle(_ref) {
   var seoArchiveValue = _ref.seoArchiveValue,
       onSeoArchiveChange = _ref.onSeoArchiveChange;
-  var help = seoArchiveValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Show a cached link in search results.', 'textdomain') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Do not show a cached link in search results.', 'textdomain');
+  var help = seoArchiveValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Show a cached link in search results.', 'seo-gutenberg-sidebar') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Do not show a cached link in search results.', 'seo-gutenberg-sidebar');
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Allow search engines to show a cached link to this page in search results?', 'textdomain'),
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Allow search engines to show a cached link to this page in search results?', 'seo-gutenberg-sidebar'),
     help: help,
     checked: seoArchiveValue,
     onChange: function onChange(value) {
@@ -218,9 +218,9 @@ var SEODescription = function SEODescription(_ref) {
   var seoDescriptionValue = _ref.seoDescriptionValue,
       onSeoDescriptionChange = _ref.onSeoDescriptionChange;
   var seoDescriptionLength = !!seoDescriptionValue ? seoDescriptionValue.length : '0';
-  var help = !seoDescriptionValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Enter meta description for this page.', 'textdomain') : 160 <= seoDescriptionLength ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Meta descriptions can be any length, but some search engines can truncate snippets to about 155-160 characters.', 'textdomain') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('We recommend that the meta description be sufficiently descriptive and should be between 50 to 160 characters.', 'textdomain');
+  var help = !seoDescriptionValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Enter meta description for this page.', 'seo-gutenberg-sidebar') : 160 <= seoDescriptionLength ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Meta descriptions can be any length, but some search engines can truncate snippets to about 155-160 characters.', 'seo-gutenberg-sidebar') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('We recommend that the meta description be sufficiently descriptive and should be between 50 to 160 characters.', 'seo-gutenberg-sidebar');
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["TextareaControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Meta description', 'textdomain') + ' (' + seoDescriptionLength + '/160' + ')',
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Meta description', 'seo-gutenberg-sidebar') + ' (' + seoDescriptionLength + '/160' + ')',
     help: help,
     value: seoDescriptionValue,
     onChange: function onChange(value) {
@@ -286,9 +286,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 var SEOFollowToggle = function SEOFollowToggle(_ref) {
   var seoFollowValue = _ref.seoFollowValue,
       onSeoFollowChange = _ref.onSeoFollowChange;
-  var help = seoFollowValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Search engines can follow the links on this page.', 'textdomain') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Search engines cannot follow the links on this page.', 'textdomain');
+  var help = seoFollowValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Search engines can follow the links on this page.', 'seo-gutenberg-sidebar') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Search engines cannot follow the links on this page.', 'seo-gutenberg-sidebar');
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Should search engines follow links on this page and index them?', 'textdomain'),
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Should search engines follow links on this page and index them?', 'seo-gutenberg-sidebar'),
     help: help,
     checked: seoFollowValue,
     onChange: function onChange(value) {
@@ -354,9 +354,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 var SEOImageIndexToggle = function SEOImageIndexToggle(_ref) {
   var seoImageIndexValue = _ref.seoImageIndexValue,
       onSeoImageIndexChange = _ref.onSeoImageIndexChange;
-  var help = seoImageIndexValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Index the images on this page.', 'textdomain') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Do not index images on this page.', 'textdomain');
+  var help = seoImageIndexValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Index the images on this page.', 'seo-gutenberg-sidebar') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Do not index images on this page.', 'seo-gutenberg-sidebar');
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Should search engines index any images on a page?', 'textdomain'),
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Should search engines index any images on a page?', 'seo-gutenberg-sidebar'),
     help: help,
     checked: seoImageIndexValue,
     onChange: function onChange(value) {
@@ -422,9 +422,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 var SEOIndexToggle = function SEOIndexToggle(_ref) {
   var seoIndexValue = _ref.seoIndexValue,
       onSeoIndexChange = _ref.onSeoIndexChange;
-  var help = seoIndexValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Index and show this page in search results.', 'textdomain') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Do not index and not show this page in search results.', 'textdomain');
+  var help = seoIndexValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Index and show this page in search results.', 'seo-gutenberg-sidebar') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Do not index and not show this page in search results.', 'seo-gutenberg-sidebar');
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Allow search engines to show this page in search results?', 'textdomain'),
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Allow search engines to show this page in search results?', 'seo-gutenberg-sidebar'),
     help: help,
     checked: seoIndexValue,
     onChange: function onChange(value) {
@@ -490,9 +490,9 @@ function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { va
 var SEOSnippetToggle = function SEOSnippetToggle(_ref) {
   var seoSnippetValue = _ref.seoSnippetValue,
       onSeoSnippetChange = _ref.onSeoSnippetChange;
-  var help = seoSnippetValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Show a snippet in search results.', 'textdomain') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Do not show a snippet in search results.', 'textdomain');
+  var help = seoSnippetValue ? Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Show a snippet in search results.', 'seo-gutenberg-sidebar') : Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Do not show a snippet in search results.', 'seo-gutenberg-sidebar');
   return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__["ToggleControl"], {
-    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Allow search engines to show a snippet of this page (i.e. meta description) in search results?', 'textdomain'),
+    label: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_2__["__"])('Allow search engines to show a snippet of this page (i.e. meta description) in search results?', 'seo-gutenberg-sidebar'),
     help: help,
     checked: seoSnippetValue,
     onChange: function onChange(value) {
@@ -571,9 +571,9 @@ Object(_wordpress_plugins__WEBPACK_IMPORTED_MODULE_1__["registerPlugin"])('seo-g
   render: function render() {
     return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["Fragment"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_2__["PluginSidebarMoreMenuItem"], {
       target: "seo-gutenberg-sidebar"
-    }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('SEO Options', 'textdomain')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_2__["PluginSidebar"], {
+    }, Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('SEO Options', 'seo-gutenberg-sidebar')), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_edit_post__WEBPACK_IMPORTED_MODULE_2__["PluginSidebar"], {
       name: "seo-gutenberg-sidebar",
-      title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('SEO Options', 'textdomain')
+      title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_3__["__"])('SEO Options', 'seo-gutenberg-sidebar')
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_4__["PanelBody"], {
       intialOpen: true
     }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_SEOIndexToggle__WEBPACK_IMPORTED_MODULE_5__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_SEOFollowToggle__WEBPACK_IMPORTED_MODULE_6__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_SEOImageIndexToggle__WEBPACK_IMPORTED_MODULE_7__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_SEOArchiveToggle__WEBPACK_IMPORTED_MODULE_8__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_SEOSnippetToggle__WEBPACK_IMPORTED_MODULE_9__["default"], null), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_components_SEODescription__WEBPACK_IMPORTED_MODULE_10__["default"], null))));

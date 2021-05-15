@@ -4,11 +4,11 @@ import {compose} from '@wordpress/compose';
 import {withDispatch, withSelect} from '@wordpress/data';
 
 const SEOArchiveToggle = ({seoArchiveValue, onSeoArchiveChange}) => {
-    const help = seoArchiveValue ? __('Show a cached link in search results.', 'textdomain') : __('Do not show a cached link in search results.', 'textdomain');
+    const help = seoArchiveValue ? __('Show a cached link in search results.', 'seo-gutenberg-sidebar') : __('Do not show a cached link in search results.', 'seo-gutenberg-sidebar');
 
     return (
         <ToggleControl
-            label={__('Allow search engines to show a cached link to this page in search results?', 'textdomain')}
+            label={__('Allow search engines to show a cached link to this page in search results?', 'seo-gutenberg-sidebar')}
             help={help}
             checked={seoArchiveValue}
             onChange={value => onSeoArchiveChange(value)}/>

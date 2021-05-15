@@ -4,10 +4,10 @@ import {compose} from '@wordpress/compose';
 import {withDispatch, withSelect} from '@wordpress/data';
 
 const SEOIndexToggle = ({seoIndexValue, onSeoIndexChange}) => {
-    const help = seoIndexValue ? __('Index and show this page in search results.', 'textdomain') : __('Do not index and not show this page in search results.', 'textdomain');
+    const help = seoIndexValue ? __('Index and show this page in search results.', 'seo-gutenberg-sidebar') : __('Do not index and not show this page in search results.', 'seo-gutenberg-sidebar');
 
     return (
-        <ToggleControl label={__('Allow search engines to show this page in search results?', 'textdomain')} help={help}
+        <ToggleControl label={__('Allow search engines to show this page in search results?', 'seo-gutenberg-sidebar')} help={help}
                        checked={seoIndexValue}
                        onChange={value => onSeoIndexChange(value)}/>
     );

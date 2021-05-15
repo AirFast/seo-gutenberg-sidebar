@@ -22,9 +22,9 @@ registerPlugin('seo-gutenberg-sidebar', {
         return (
             <>
                 <PluginSidebarMoreMenuItem target='seo-gutenberg-sidebar'>
-                    {__('SEO Options', 'textdomain')}
+                    {__('SEO Options', 'seo-gutenberg-sidebar')}
                 </PluginSidebarMoreMenuItem>
-                <PluginSidebar name='seo-gutenberg-sidebar' title={__('SEO Options', 'textdomain')}>
+                <PluginSidebar name='seo-gutenberg-sidebar' title={__('SEO Options', 'seo-gutenberg-sidebar')}>
                     <PanelBody intialOpen={true}>
                         <SEOIndexToggle/>
                         <SEOFollowToggle/>

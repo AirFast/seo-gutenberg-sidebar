@@ -4,11 +4,11 @@ import {compose} from '@wordpress/compose';
 import {withDispatch, withSelect} from '@wordpress/data';
 
 const SEOSnippetToggle = ({seoSnippetValue, onSeoSnippetChange}) => {
-    const help = seoSnippetValue ? __('Show a snippet in search results.', 'textdomain') : __('Do not show a snippet in search results.', 'textdomain');
+    const help = seoSnippetValue ? __('Show a snippet in search results.', 'seo-gutenberg-sidebar') : __('Do not show a snippet in search results.', 'seo-gutenberg-sidebar');
 
     return (
         <ToggleControl
-            label={__('Allow search engines to show a snippet of this page (i.e. meta description) in search results?', 'textdomain')}
+            label={__('Allow search engines to show a snippet of this page (i.e. meta description) in search results?', 'seo-gutenberg-sidebar')}
             help={help}
             checked={seoSnippetValue}
             onChange={value => onSeoSnippetChange(value)}/>

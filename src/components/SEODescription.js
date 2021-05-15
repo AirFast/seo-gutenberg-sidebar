@@ -6,13 +6,13 @@ import {withDispatch, withSelect} from '@wordpress/data';
 const SEODescription = ({seoDescriptionValue, onSeoDescriptionChange}) => {
     const seoDescriptionLength = !!seoDescriptionValue ? seoDescriptionValue.length : '0';
     const help = !seoDescriptionValue
-        ? __('Enter meta description for this page.', 'textdomain')
+        ? __('Enter meta description for this page.', 'seo-gutenberg-sidebar')
         : 160 <= seoDescriptionLength
-            ? __('Meta descriptions can be any length, but some search engines can truncate snippets to about 155-160 characters.', 'textdomain')
-            : __('We recommend that the meta description be sufficiently descriptive and should be between 50 to 160 characters.', 'textdomain')
+            ? __('Meta descriptions can be any length, but some search engines can truncate snippets to about 155-160 characters.', 'seo-gutenberg-sidebar')
+            : __('We recommend that the meta description be sufficiently descriptive and should be between 50 to 160 characters.', 'seo-gutenberg-sidebar')
 
     return (
-        <TextareaControl label={__('Meta description', 'textdomain') + ' (' + seoDescriptionLength + '/160' + ')'}
+        <TextareaControl label={__('Meta description', 'seo-gutenberg-sidebar') + ' (' + seoDescriptionLength + '/160' + ')'}
                          help={help} value={seoDescriptionValue}
                          onChange={value => onSeoDescriptionChange(value)}/>
     );

@@ -4,10 +4,10 @@ import {compose} from '@wordpress/compose';
 import {withDispatch, withSelect} from '@wordpress/data';
 
 const SEOImageIndexToggle = ({seoImageIndexValue, onSeoImageIndexChange}) => {
-    const help = seoImageIndexValue ? __('Index the images on this page.', 'textdomain') : __('Do not index images on this page.', 'textdomain');
+    const help = seoImageIndexValue ? __('Index the images on this page.', 'seo-gutenberg-sidebar') : __('Do not index images on this page.', 'seo-gutenberg-sidebar');
 
     return (
-        <ToggleControl label={__('Should search engines index any images on a page?', 'textdomain')} help={help}
+        <ToggleControl label={__('Should search engines index any images on a page?', 'seo-gutenberg-sidebar')} help={help}
                        checked={seoImageIndexValue}
                        onChange={value => onSeoImageIndexChange(value)}/>
     );

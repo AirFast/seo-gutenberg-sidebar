@@ -4,10 +4,10 @@ import {compose} from '@wordpress/compose';
 import {withDispatch, withSelect} from '@wordpress/data';
 
 const SEOFollowToggle = ({seoFollowValue, onSeoFollowChange}) => {
-    const help = seoFollowValue ? __('Search engines can follow the links on this page.', 'textdomain') : __('Search engines cannot follow the links on this page.', 'textdomain');
+    const help = seoFollowValue ? __('Search engines can follow the links on this page.', 'seo-gutenberg-sidebar') : __('Search engines cannot follow the links on this page.', 'seo-gutenberg-sidebar');
 
     return (
-        <ToggleControl label={__('Should search engines follow links on this page and index them?', 'textdomain')}
+        <ToggleControl label={__('Should search engines follow links on this page and index them?', 'seo-gutenberg-sidebar')}
                        help={help}
                        checked={seoFollowValue}
                        onChange={value => onSeoFollowChange(value)}/>
