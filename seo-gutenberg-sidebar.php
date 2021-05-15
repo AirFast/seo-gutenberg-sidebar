@@ -7,6 +7,7 @@
  * Author: Andrew Petryk
  * Author URI: https://themeforest.net/user/airfast
  * Text Domain: seo-gutenberg-sidebar
+ * Domain Path: /languages
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -37,7 +38,7 @@ function seo_set_script_translations() {
 	wp_set_script_translations(
 		'seo-gutenberg-sidebar',
 		'seo-gutenberg-sidebar',
-		plugin_dir_path( __FILE__ ) . 'languages'
+		plugin_dir_path( __FILE__ ) . '/languages/'
 	);
 }
 
