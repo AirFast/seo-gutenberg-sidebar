@@ -1,0 +1,139 @@
+# Copyright (C) 2021 Andrew Petryk
+# This file is distributed under the same license as the SEO Gutenberg Sidebar plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: SEO Gutenberg Sidebar 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/seo-gutenberg-"
+"sidebar\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2021-05-15T15:38:59+03:00\n"
+"PO-Revision-Date: 2021-05-15 16:04+0300\n"
+"X-Generator: Poedit 2.0.7\n"
+"X-Domain: seo-gutenberg-sidebar\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Language: uk\n"
+
+#. Plugin Name of the plugin
+msgid "SEO Gutenberg Sidebar"
+msgstr "SEO бічна панель для Гутенберга"
+
+#. Plugin URI of the plugin
+#. Author URI of the plugin
+msgid "https://themeforest.net/user/airfast"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"SEO Sidebar for the block editor Gutenberg. This plugin also sets simple SEO "
+"settings for your entire site."
+msgstr ""
+"SEO бічна панель для редактора блоків Гутенберг. Цей плагін також встановлює "
+"прості налаштування SEO для всього вашого сайту."
+
+#. Author of the plugin
+msgid "Andrew Petryk"
+msgstr "Андрій Петрик"
+
+#: build/index.js:152 src/components/SEOArchiveToggle.js:7
+msgid "Show a cached link in search results."
+msgstr "Показати кешоване посилання в результатах пошуку."
+
+#: build/index.js:152 src/components/SEOArchiveToggle.js:7
+msgid "Do not show a cached link in search results."
+msgstr "Не показувати кешоване посилання в результатах пошуку."
+
+#: build/index.js:154 src/components/SEOArchiveToggle.js:11
+msgid ""
+"Allow search engines to show a cached link to this page in search results?"
+msgstr ""
+"Дозволити пошуковим системам відображати кешоване посилання на цю сторінку в "
+"результатах пошуку?"
+
+#: build/index.js:221 src/components/SEODescription.js:9
+msgid "Enter meta description for this page."
+msgstr "Введіть мета-опис для цієї сторінки."
+
+#: build/index.js:221 src/components/SEODescription.js:11
+msgid ""
+"Meta descriptions can be any length, but some search engines can truncate "
+"snippets to about 155-160 characters."
+msgstr ""
+"Мета-описи можуть бути будь-якої довжини, але деякі пошукові системи можуть "
+"скоротити фрагменти приблизно до 155-160 символів."
+
+#: build/index.js:221 src/components/SEODescription.js:12
+msgid ""
+"We recommend that the meta description be sufficiently descriptive and "
+"should be between 50 to 160 characters."
+msgstr ""
+"Ми рекомендуємо, щоб мета-опис був достатньо описовим і складав від 50 до "
+"160 символів."
+
+#: build/index.js:223 src/components/SEODescription.js:15
+msgid "Meta description"
+msgstr "Мета-опис"
+
+#: build/index.js:289 src/components/SEOFollowToggle.js:7
+msgid "Search engines can follow the links on this page."
+msgstr "Пошукові системи можуть переходити за посиланнями на цій сторінці."
+
+#: build/index.js:289 src/components/SEOFollowToggle.js:7
+msgid "Search engines cannot follow the links on this page."
+msgstr "Пошукові системи не можуть переходити за посиланнями на цій сторінці."
+
+#: build/index.js:291 src/components/SEOFollowToggle.js:10
+msgid "Should search engines follow links on this page and index them?"
+msgstr ""
+"Чи повинні пошукові системи переходити за посиланнями на цій сторінці та "
+"індексувати їх?"
+
+#: build/index.js:357 src/components/SEOImageIndexToggle.js:7
+msgid "Index the images on this page."
+msgstr "Індексуйте зображення на цій сторінці."
+
+#: build/index.js:357 src/components/SEOImageIndexToggle.js:7
+msgid "Do not index images on this page."
+msgstr "Не індексуйте зображення на цій сторінці."
+
+#: build/index.js:359 src/components/SEOImageIndexToggle.js:10
+msgid "Should search engines index any images on a page?"
+msgstr ""
+"Чи повинні пошукові системи індексувати будь-які зображення на сторінці?"
+
+#: build/index.js:425 src/components/SEOIndexToggle.js:7
+msgid "Index and show this page in search results."
+msgstr "Індексувати та показувати цю сторінку в результатах пошуку."
+
+#: build/index.js:425 src/components/SEOIndexToggle.js:7
+msgid "Do not index and not show this page in search results."
+msgstr "Не індексувати та не показувати цю сторінку в результатах пошуку."
+
+#: build/index.js:427 src/components/SEOIndexToggle.js:10
+msgid "Allow search engines to show this page in search results?"
+msgstr ""
+"Дозволити пошуковим системам відображати цю сторінку в результатах пошуку?"
+
+#: build/index.js:493 src/components/SEOSnippetToggle.js:7
+msgid "Show a snippet in search results."
+msgstr "Показати фрагмент у результатах пошуку."
+
+#: build/index.js:493 src/components/SEOSnippetToggle.js:7
+msgid "Do not show a snippet in search results."
+msgstr "Не показувати фрагмент у результатах пошуку."
+
+#: build/index.js:495 src/components/SEOSnippetToggle.js:11
+msgid ""
+"Allow search engines to show a snippet of this page (i.e. meta description) "
+"in search results?"
+msgstr ""
+"Дозволити пошуковим системам показувати фрагмент цієї сторінки (тобто мета-"
+"опис) у результатах пошуку?"
+
+#: build/index.js:574 build/index.js:576 src/index.js:25 src/index.js:27
+msgid "SEO Options"
+msgstr "SEO Параметри"
