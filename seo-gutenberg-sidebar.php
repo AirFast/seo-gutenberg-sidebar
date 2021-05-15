@@ -33,12 +33,15 @@ function seo_enqueue_assets() {
 
 add_action( 'enqueue_block_editor_assets', 'seo_enqueue_assets' );
 
-
 function seo_set_script_translations() {
-	wp_set_script_translations( 'seo-gutenberg-sidebar', 'seo-gutenberg-sidebar' );
+	wp_set_script_translations(
+		'seo-gutenberg-sidebar',
+		'seo-gutenberg-sidebar',
+		plugin_dir_path( __FILE__ ) . 'languages'
+	);
 }
-add_action( 'init', 'seo_set_script_translations' );
 
+add_action( 'init', 'seo_set_script_translations' );
 
 function seo_meta_robots_directives( $robots ) {
 	if ( is_home() || is_front_page() || is_category() ) {
