@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-05-15T17:48:03+03:00\n"
+"POT-Creation-Date: 2021-05-17T09:39:36+03:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.4.0\n"
 "X-Domain: seo-gutenberg-sidebar\n"
@@ -31,102 +31,103 @@ msgstr ""
 msgid "Andrew Petryk"
 msgstr ""
 
-#: build/index.js:1
-#: src/components/SEOIndexToggle.js:7
-msgid "Index and show this page in search results."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOIndexToggle.js:7
-msgid "Do not index and not show this page in search results."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOIndexToggle.js:10
-msgid "Allow search engines to show this page in search results?"
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOFollowToggle.js:7
-msgid "Search engines can follow the links on this page."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOFollowToggle.js:7
-msgid "Search engines cannot follow the links on this page."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOFollowToggle.js:10
-msgid "Should search engines follow links on this page and index them?"
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOImageIndexToggle.js:7
-msgid "Index the images on this page."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOImageIndexToggle.js:7
-msgid "Do not index images on this page."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOImageIndexToggle.js:10
-msgid "Should search engines index any images on a page?"
-msgstr ""
-
-#: build/index.js:1
+#: build/index.js:152
 #: src/components/SEOArchiveToggle.js:7
 msgid "Show a cached link in search results."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:152
 #: src/components/SEOArchiveToggle.js:7
 msgid "Do not show a cached link in search results."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:154
 #: src/components/SEOArchiveToggle.js:11
 msgid "Allow search engines to show a cached link to this page in search results?"
 msgstr ""
 
-#: build/index.js:1
-#: src/components/SEOSnippetToggle.js:7
-msgid "Show a snippet in search results."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOSnippetToggle.js:7
-msgid "Do not show a snippet in search results."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEOSnippetToggle.js:11
-msgid "Allow search engines to show a snippet of this page (i.e. meta description) in search results?"
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEODescription.js:11
-msgid "Meta descriptions can be any length, but some search engines can truncate snippets to about 155-160 characters."
-msgstr ""
-
-#: build/index.js:1
-#: src/components/SEODescription.js:12
-msgid "We recommend that the meta description be sufficiently descriptive and should be between 50 to 160 characters."
-msgstr ""
-
-#: build/index.js:1
+#: build/index.js:221
 #: src/components/SEODescription.js:9
 msgid "Enter meta description for this page."
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:221
+#: src/components/SEODescription.js:11
+msgid "Meta descriptions can be any length, but some search engines can truncate snippets to about 155-160 characters."
+msgstr ""
+
+#: build/index.js:221
+#: src/components/SEODescription.js:12
+msgid "We recommend that the meta description be sufficiently descriptive and should be between 50 to 160 characters."
+msgstr ""
+
+#: build/index.js:223
 #: src/components/SEODescription.js:15
 msgid "Meta description"
 msgstr ""
 
-#: build/index.js:1
+#: build/index.js:289
+#: src/components/SEOFollowToggle.js:7
+msgid "Search engines can follow the links on this page."
+msgstr ""
+
+#: build/index.js:289
+#: src/components/SEOFollowToggle.js:7
+msgid "Search engines cannot follow the links on this page."
+msgstr ""
+
+#: build/index.js:291
+#: src/components/SEOFollowToggle.js:10
+msgid "Should search engines follow links on this page and index them?"
+msgstr ""
+
+#: build/index.js:357
+#: src/components/SEOImageIndexToggle.js:7
+msgid "Index the images on this page."
+msgstr ""
+
+#: build/index.js:357
+#: src/components/SEOImageIndexToggle.js:7
+msgid "Do not index images on this page."
+msgstr ""
+
+#: build/index.js:359
+#: src/components/SEOImageIndexToggle.js:10
+msgid "Should search engines index any images on a page?"
+msgstr ""
+
+#: build/index.js:425
+#: src/components/SEOIndexToggle.js:7
+msgid "Index and show this page in search results."
+msgstr ""
+
+#: build/index.js:425
+#: src/components/SEOIndexToggle.js:7
+msgid "Do not index and not show this page in search results."
+msgstr ""
+
+#: build/index.js:427
+#: src/components/SEOIndexToggle.js:10
+msgid "Allow search engines to show this page in search results?"
+msgstr ""
+
+#: build/index.js:493
+#: src/components/SEOSnippetToggle.js:7
+msgid "Show a snippet in search results."
+msgstr ""
+
+#: build/index.js:493
+#: src/components/SEOSnippetToggle.js:7
+msgid "Do not show a snippet in search results."
+msgstr ""
+
+#: build/index.js:495
+#: src/components/SEOSnippetToggle.js:11
+msgid "Allow search engines to show a snippet of this page (i.e. meta description) in search results?"
+msgstr ""
+
+#: build/index.js:574
+#: build/index.js:576
 #: src/index.js:25
 #: src/index.js:27
 msgid "SEO Options"

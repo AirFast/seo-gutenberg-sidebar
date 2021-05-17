@@ -10,15 +10,12 @@
  * Domain Path: /languages
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit;
-}
+defined( 'ABSPATH' ) || exit;
 
-require_once plugin_dir_path( __FILE__ ) . 'inc/metabox.php';
 
-function seo_enqueue_assets() {
-	wp_enqueue_script(
-		'seo-gutenberg-sidebar',
+function seo_gutenberg_sidebar_init() {
+	wp_register_script(
+		'seo-gutenberg-sidebar-script-js',
 		plugins_url( 'build/index.js', __FILE__ ),
 		array(
 			'wp-plugins',
@@ -28,21 +25,36 @@ function seo_enqueue_assets() {
 			'wp-components',
 			'wp-data',
 			'wp-compose'
-		)
+		),
+		false,
+		true
 	);
+
+	load_plugin_textdomain(
+		'seo-gutenberg-sidebar',
+		false,
+		dirname( plugin_basename( __FILE__ ) ) . '/languages'
+	);
+
+	wp_set_script_translations(
+		'seo-gutenberg-sidebar-script-js',
+		'seo-gutenberg-sidebar',
+		plugin_dir_path( __FILE__ ) . 'languages/'
+	);
+}
+
+add_action( 'init', 'seo_gutenberg_sidebar_init' );
+
+
+require_once plugin_dir_path( __FILE__ ) . 'inc/metabox.php';
+
+
+function seo_enqueue_assets() {
+	wp_enqueue_script( 'seo-gutenberg-sidebar-script-js' );
 }
 
 add_action( 'enqueue_block_editor_assets', 'seo_enqueue_assets' );
 
-function seo_set_script_translations() {
-	wp_set_script_translations(
-		'seo-gutenberg-sidebar',
-		'seo-gutenberg-sidebar',
-		plugin_dir_path( __FILE__ ) . '/languages/'
-	);
-}
-
-add_action( 'init', 'seo_set_script_translations' );
 
 function seo_meta_robots_directives( $robots ) {
 	if ( is_home() || is_front_page() || is_category() ) {
