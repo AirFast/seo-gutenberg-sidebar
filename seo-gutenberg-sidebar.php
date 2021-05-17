@@ -39,7 +39,7 @@ function seo_gutenberg_sidebar_init() {
 	wp_set_script_translations(
 		'seo-gutenberg-sidebar-script-js',
 		'seo-gutenberg-sidebar',
-		plugin_dir_path( __FILE__ ) . 'languages/'
+		plugin_dir_path( __FILE__ ) . 'languages'
 	);
 }
 
