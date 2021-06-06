@@ -125,7 +125,14 @@ function seo_meta_description() {
 	}
 
 	if ( is_home() || is_front_page() ) {
-		echo '<meta name="description" content="' . esc_attr( get_bloginfo( 'description' ) ) . '" />' . "\n";
+		global $post;
+		$seo_meta_data = get_post_meta( $post->ID, '_seo_meta_data', true );
+
+		if ( ! empty( $seo_meta_data['description'] ) && isset( $seo_meta_data['description'] ) ) {
+			echo '<meta name="description" content="' . esc_attr( $seo_meta_data['description'] ) . '" />' . "\n";
+		} else {
+			echo '<meta name="description" content="' . esc_attr( get_bloginfo( 'description' ) ) . '" />' . "\n";
+		}
 	}
 
 	if ( is_category() ) {
